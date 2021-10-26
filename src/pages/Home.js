@@ -1,5 +1,12 @@
 import React from "react";
-import { Header, HeroHome, Division, Events, Project } from "../components/";
+import {
+	Header,
+	HeroHome,
+	Division,
+	Events,
+	Project,
+	Message,
+} from "../components/";
 const Home = () => {
 	return (
 		<div>
@@ -10,6 +17,7 @@ const Home = () => {
 					{/*  Page sections */}
 					<HeroHome />
 					<Division />
+					<Message />
 					<Events />
 					<Project />
 					{/* 
