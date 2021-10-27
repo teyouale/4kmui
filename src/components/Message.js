@@ -2,7 +2,7 @@ import React from "react";
 
 const Message = () => {
 	return (
-		<div className=''>
+		<div className='' data-aos='flip-up' data-aos-delay='300'>
 			{/* <div className='max-w-3xl mx-auto mt-50' data-aos='zoom-y-out'> */}
 			<div className='max-w-3xl mx-auto mt-00'>
 				<div className='relative flex items-start border-2 border-gray-200 rounded bg-white'>
@@ -27,7 +27,7 @@ const Message = () => {
 							Lorem
 						</cite>
 						<div className='text-gray-600'>
-							<span>CEO & Co-Founder</span>{" "}
+							<span>CEO</span>{" "}
 							<a className='text-blue-600 hover:underline' href='#0'>
 								@Lorem
 							</a>

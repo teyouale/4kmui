@@ -6,6 +6,7 @@ import {
 	Events,
 	Project,
 	Message,
+	Footer,
 } from "../components/";
 const Home = () => {
 	return (
@@ -27,7 +28,7 @@ const Home = () => {
 					<Newsletter /> */}
 				</main>
 
-				{/* <Footer /> */}
+				<Footer />
 				{/* <Footer /> */}
 			</div>
 		</div>

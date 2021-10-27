@@ -30,7 +30,9 @@ function Division() {
 				<div className='pt-12 md:pt-20'>
 					{/* Section header */}
 					<div className='max-w-3xl mx-auto text-center pb-12 md:pb-16'>
-						<h1 className='h2 mb-4 custom'>Specialization</h1>
+						<span className=' inline-block mb-10 text- text-4xl bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400 font-black'>
+							Specialization
+						</span>
 						<p className='text-xl text-gray-600'>
 							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas
 							porttitor congue massa. Fusce posuere, magna sed pulvinar

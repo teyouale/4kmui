@@ -16,7 +16,9 @@ function Events() {
 				<div className='py-12 md:py-20'>
 					{/* Section header */}
 					<div className='max-w-3xl mx-auto text-center pb-12 md:pb-20'>
-						<h2 className='h2 mb-4'>Events</h2>
+						<span className=' inline-block mb-10 text- text-4xl bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400 font-black'>
+							Events
+						</span>
 					</div>
 					<Card drx='left' />
 					<Card drx='right' />
@@ -40,14 +42,17 @@ const Card = ({ drx }) => {
 		// className={`fixed w-full z-30 md:bg-opacity-90 transition duration-300 ease-in-out ${
 		// 	!top && "bg-white blur shadow-lg"
 		// }`}>
-		<div className='grid gap-3 grid-cols-12 grid-rows-1 items-center mb-24'>
-			<div className={` ${drx == "left" ? leftImg : rightImg}`}>
-				<div>
+		<div
+			className='grid gap-3 grid-cols-12 grid-rows-1 items-center mb-24'
+			data-aos='zoom-y-out'
+			data-aos-delay='150'>
+			<div className={`${drx == "left" ? leftImg : rightImg}`}>
+				<div className='customeFilter'>
 					<img
 						alt='Card'
 						src={event}
 						// style={{ width: "600px", height: "400px" }}
-						class=' rounded-lg  bg-blend-darken hover:bg-black m-0 box-border'
+						class=' rounded-lg  bg-blend-darken hover:bg-black m-0 box-border img '
 					/>
 				</div>
 			</div>

@@ -4,5 +4,6 @@ import Division from "./Division";
 import Events from "./Events";
 import Project from "./Project";
 import Message from "./Message";
+import Footer from "./Footer";
 
-export { Header, HeroHome, Division, Events, Project, Message };
+export { Header, HeroHome, Division, Events, Project, Message, Footer };
