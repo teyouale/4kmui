@@ -3,6 +3,11 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
+				primary: "var(--primary)",
+				primaryOn: "var(--primaryOn)",
+				secondary: "var(--secondary)",
+				secondaryOn: "var(--secondaryOn)",
+				accent: "var(--accent)",
 				gray: {
 					100: "#FBFBFB",
 					200: "#EAEAEA",

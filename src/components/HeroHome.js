@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-// import Modal from "../utils/Modal";
 import logo from "../assets/logo.svg";
 
 function HeroHome() {
 	const [videoModalOpen, setVideoModalOpen] = useState(false);
 
 	return (
-		<section className='relative'>
+		<section className='relative pb-10 dotPattern'>
 			<div
 				className='absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none'
 				aria-hidden='true'>
@@ -34,9 +33,7 @@ function HeroHome() {
 				</svg>
 			</div>
 			<div className='max-w-6xl mx-auto px-4 sm:px-6'>
-				{/* Hero content */}
 				<div className='pt-32 pb-12 md:pt-40 md:pb-20'>
-					{/* Section header */}
 					<div className='text-center pb-12 md:pb-16'>
 						<h1
 							className='text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4 knowledge'
@@ -49,10 +46,10 @@ function HeroHome() {
 						</h1>
 						<div className='max-w-3xl mx-auto'>
 							<p
-								className='text-xl text-grren-500 mb-8'
+								className='text-xl text-primaryOn mb-8'
 								data-aos='zoom-y-out'
 								data-aos-delay='150'>
-								{/* we foster Knowledge to impact our society through technology. */}
+								{/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo,beatae! */}
 							</p>
 						</div>
 					</div>

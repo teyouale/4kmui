@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.svg";
+import { navLink } from "../assets/data";
 
 function Header() {
 	const [top, setTop] = useState(true);
@@ -13,11 +14,10 @@ function Header() {
 		window.addEventListener("scroll", scrollHandler);
 		return () => window.removeEventListener("scroll", scrollHandler);
 	}, [top]);
-
 	return (
 		<header
 			className={`fixed w-full z-30 md:bg-opacity-90 transition duration-300 ease-in-out ${
-				!top && "bg-white blur shadow-lg"
+				!top && "bg-primary blur shadow-lg"
 			}`}>
 			<div className='max-w-6xl mx-auto px-5 sm:px-6'>
 				<div className='flex items-center justify-between h-16 md:h-20'>
@@ -29,40 +29,30 @@ function Header() {
 							className='flex flex-row items-center'
 							aria-label='Cruip'>
 							<img src={logo} className='w-12' />
-							<a className='m-2'>4K Labs</a>
+							<span className='m-2 text-2xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400'>
+								4K Labs
+							</span>
 						</Link>
 					</div>
 
 					<nav className='flex flex-grow'>
 						<ul className='flex flex-grow justify-end flex-wrap items-center'>
-							<li>
-								<Link
-									to='/Specialization'
-									className='font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out'>
-									Specialization
-								</Link>
-							</li>
-							<li>
-								<Link
-									to='/Teams'
-									className='font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out'>
-									Teams
-								</Link>
-							</li>
-							<li>
-								<Link
-									to='/Projects'
-									className='font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out'>
-									Projects
-								</Link>
-							</li>
-							<li>
-								<Link
-									to='/Login'
-									className='btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3'>
-									<span>Login</span>
-								</Link>
-							</li>
+							{navLink.map((item) => {
+								return (
+									<li key={item.name}>
+										<Link
+											to={`/${item.name}`}
+											className={`
+											${
+												item.isButton
+													? "btn-sm text-primary bg-secondaryOn  ml-3"
+													: "font-medium text-primaryOn hover:text-secondaryOn px-5 py-3 flex items-center transition duration-150 ease-in-out"
+											}	`}>
+											{item.name}
+										</Link>
+									</li>
+								);
+							})}
 						</ul>
 					</nav>
 				</div>

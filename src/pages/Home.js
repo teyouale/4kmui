@@ -21,15 +21,8 @@ const Home = () => {
 					<Message />
 					<Events />
 					<Project />
-					{/* 
-					<FeaturesHome />
-					<FeaturesBlocks />
-					<Testimonials />
-					<Newsletter /> */}
 				</main>
-
 				<Footer />
-				{/* <Footer /> */}
 			</div>
 		</div>
 	);
