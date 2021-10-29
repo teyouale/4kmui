@@ -10,7 +10,7 @@ function Events() {
 	return (
 		// <div>
 		// <div>
-		<section className='relative dotPattern'>
+		<section className='relative'>
 			{/* Section background (needs .relative class on parent and next sibling elements) */}
 			<div
 				className='absolute inset-0  md:mt-24 lg:mt-0 bg-secondary pointer-events-none'
@@ -28,7 +28,6 @@ function Events() {
 					<div className='flex flex-col'>
 						<Card drx='left' />
 						<Card drx='right' />
-						<Card />
 						{isVisible ? <Card drx='left' /> : ""}
 						{isVisible ? <Card drx='right' /> : ""}
 						<button
@@ -69,7 +68,7 @@ const Card = ({ drx }) => {
 					/>
 				</div>
 			</div>
-			<div className={`${drx == "left" ? rightCont : leftCont}`}>
+			<div className={`${drx == "left" ? rightCont : leftCont} z-50`}>
 				<div
 					className=' px-4 py-6 bg-accent shadow-lg sm:rounded-3xl bg-clip-padding bg-opacity-60 border border-gray-100'
 					style={{ backdropFilter: "blur(20px)" }}>

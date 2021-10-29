@@ -17,7 +17,7 @@ function Header() {
 	return (
 		<header
 			className={`fixed w-full z-30 md:bg-opacity-90 transition duration-300 ease-in-out ${
-				!top && "bg-primary blur shadow-lg"
+				!top && "bg-white blur shadow-lg"
 			}`}>
 			<div className='max-w-6xl mx-auto px-5 sm:px-6'>
 				<div className='flex items-center justify-between h-16 md:h-20'>
@@ -28,7 +28,7 @@ function Header() {
 							to='/'
 							className='flex flex-row items-center'
 							aria-label='Cruip'>
-							<img src={logo} className='w-12' />
+							<img src={logo} className='w-12 ' />
 							<span className='m-2 text-2xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400'>
 								4K Labs
 							</span>

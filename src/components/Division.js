@@ -20,7 +20,7 @@ function Division() {
 	}, [tab]);
 
 	return (
-		<section className='relative bg-secondary'>
+		<section className='relative bg-secondary DivisionPath'>
 			{/* Section background (needs .relative class on parent and next sibling elements) */}
 			<div
 				className='absolute inset-0 bg-secondary pointer-events-none mb-16'

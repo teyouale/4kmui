@@ -5,7 +5,7 @@ function HeroHome() {
 	const [videoModalOpen, setVideoModalOpen] = useState(false);
 
 	return (
-		<section className='relative pb-10 dotPattern'>
+		<section className='relative pb-10 HeroPath'>
 			<div
 				className='absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none'
 				aria-hidden='true'>
@@ -27,8 +27,8 @@ function HeroHome() {
 						</linearGradient>
 					</defs>
 					<g fill='url(#illustration-01)' fillRule='evenodd'>
-						<circle cx='1232' cy='128' r='128' />
-						<circle cx='155' cy='443' r='64' />
+						{/* <circle cx='1232' cy='128' r='128' /> */}
+						{/* <circle cx='155' cy='443' r='64' /> */}
 					</g>
 				</svg>
 			</div>
