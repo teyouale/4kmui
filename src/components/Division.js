@@ -20,12 +20,22 @@ function Division() {
 	}, [tab]);
 
 	return (
-		<section className='relative bg-secondary DivisionPath'>
-			{/* Section background (needs .relative class on parent and next sibling elements) */}
+		<section className='relative bg-divisionbg  '>
 			<div
-				className='absolute inset-0 bg-secondary pointer-events-none mb-16'
+				className='absolute inset-0 bg-divisionbg pointer-events-none mb-16'
 				aria-hidden='true'></div>
 			<div className='absolute left-0 right-0 m-auto w-px p-px h-20 bg-accent transform -translate-y-1/2'></div>
+			<div class='custom-shape-divider-bottom-1635862722'>
+				<svg
+					data-name='Layer 1'
+					xmlns='http://www.w3.org/2000/svg'
+					viewBox='0 0 1200 120'
+					preserveAspectRatio='none'>
+					<path
+						d='M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z'
+						class='shape-fill'></path>
+				</svg>
+			</div>
 
 			<div className='relative max-w-6xl mx-auto px-4 sm:px-6'>
 				<div className='pt-12 md:pt-20'>

@@ -7,6 +7,7 @@ import {
 	Project,
 	Message,
 	Footer,
+	Partners,
 } from "../components/";
 const Home = () => {
 	return (
@@ -18,9 +19,10 @@ const Home = () => {
 					{/*  Page sections */}
 					<HeroHome />
 					<Division />
-					<Message />
+					{/* <Message /> */}
 					<Events />
 					<Project />
+					{/* <Partners /> */}
 				</main>
 				<Footer />
 			</div>

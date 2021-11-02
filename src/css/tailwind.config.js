@@ -8,6 +8,9 @@ module.exports = {
 				secondary: "var(--secondary)",
 				secondaryOn: "var(--secondaryOn)",
 				accent: "var(--accent)",
+				divisionbg: "#fff6f6",
+				eventbg: "#f2eeff",
+				projectbg: "#fef2cd",
 				gray: {
 					100: "#FBFBFB",
 					200: "#EAEAEA",

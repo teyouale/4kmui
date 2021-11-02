@@ -45,7 +45,7 @@ export const DivisionInfo = {
 export const MessageInfo = {
 	key: 1,
 	title: "CEO",
-	name: "John",
+	name: "Lorem",
 	Link: "#",
 	shortLink: "John",
 	desc: "“ Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iurenecessitatibus doloribus nisi recusandae. Impedit omnis, errorcommodi architecto nihil perspiciatis sit? Unde repellendus veroquo expedita, magnam neque? Cupiditate. “",

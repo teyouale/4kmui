@@ -5,5 +5,15 @@ import Events from "./Events";
 import Project from "./Project";
 import Message from "./Message";
 import Footer from "./Footer";
+import Partners from "./Partners";
 
-export { Header, HeroHome, Division, Events, Project, Message, Footer };
+export {
+	Header,
+	HeroHome,
+	Division,
+	Events,
+	Project,
+	Message,
+	Footer,
+	Partners,
+};
