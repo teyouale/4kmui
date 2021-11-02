@@ -82,9 +82,16 @@ const Card = ({ drx }) => {
 						<div className='divide-y divide-red-200'>
 							<div className='py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7'>
 								<p>
-									4k-Labs Members showcasing lab projects At Ai Exhibition Expo
-								</p>
-							</div>
+										Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+										Tempora ad obcaecati expedita impedit omnis quam
+										reprehenderit optio aut facere veniam, dicta deserunt, sunt
+										ipsa dolor fugiat nisi aperiam earum. Ut. Lorem ipsum, dolor
+										sit amet consectetur adipisicing elit. Tempora ad obcaecati
+										expedita impedit omnis quam reprehenderit optio aut facere
+										veniam, dicta deserunt, sunt ipsa dolor fugiat nisi aperiam
+										earum. Ut.
+									</p>
+								</div>
 							<div className='pt-6 text-base leading-6 font-bold sm:text-lg sm:leading-7'>
 								Jan-13-2012
 							</div>
