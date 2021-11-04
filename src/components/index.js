@@ -6,6 +6,7 @@ import Project from "./Project";
 import Message from "./Message";
 import Footer from "./Footer";
 import Partners from "./Partners";
+import Roboto from "./Roboto";
 
 export {
 	Header,
@@ -16,4 +17,5 @@ export {
 	Message,
 	Footer,
 	Partners,
+	Roboto,
 };

@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Home from "./pages/Home";
 import { Switch, Route, useLocation } from "react-router-dom";
 import AOS from "aos";
+import Roboto from "./components/Roboto";
 import { focusHandling } from "cruip-js-toolkit";
 const App = () => {
 	const location = useLocation();
@@ -21,10 +22,14 @@ const App = () => {
 		focusHandling("outline");
 	}, [location.pathname]); // triggered on route change
 	return (
-		<div>
+		<div className='	'>
+			{/* <h1>Hi</h1>
+			<Roboto className='' /> */}
+
 			<Switch>
 				<Route exact path='/'>
 					<Home />
+					{/* <Roboto /> */}
 				</Route>
 			</Switch>
 		</div>

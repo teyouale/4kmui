@@ -8,6 +8,7 @@ import {
 	Message,
 	Footer,
 	Partners,
+	Roboto,
 } from "../components/";
 const Home = () => {
 	return (
@@ -17,9 +18,10 @@ const Home = () => {
 
 				<main className='flex-grow'>
 					{/*  Page sections */}
+
 					<HeroHome />
 					<Division />
-					{/* <Message /> */}
+					<Message />
 					<Events />
 					<Project />
 					{/* <Partners /> */}

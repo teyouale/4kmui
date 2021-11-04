@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import logo from "../assets/logo.svg";
-
+import Roboto from "./Roboto";
 function HeroHome() {
 	const [videoModalOpen, setVideoModalOpen] = useState(false);
 
@@ -32,25 +32,30 @@ function HeroHome() {
 					</g>
 				</svg>
 			</div>
-			<div className='max-w-6xl mx-auto px-4 sm:px-6'>
-				<div className='pt-32 pb-12 md:pt-40 md:pb-20'>
-					<div className='text-center pb-12 md:pb-16'>
-						<h1
-							className='text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4 knowledge'
-							data-aos='zoom-y-out'>
-							Knowledge <br />
-							Innovation{" "}
-							<span className='bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400'>
-								Change
-							</span>
-						</h1>
-						<div className='max-w-3xl mx-auto'>
-							<p
-								className='text-xl text-primaryOn mb-8'
-								data-aos='zoom-y-out'
-								data-aos-delay='150'>
-								{/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo,beatae! */}
-							</p>
+			<div className='grid grid-cols-11 gap-4 grid-rows-1'>
+				<div className='col-start-1 col-end-5 row-start-1 row-end-2 '>
+					<Roboto />
+				</div>
+				<div className='max-w-6xl mx-auto px-4 sm:px-6 col-start-4 col-end-11 row-start-1 row-end-2 '>
+					<div className='pt-32 pb-12 md:pt-40 md:pb-20'>
+						<div className='text-center pb-12 md:pb-16'>
+							<h1
+								className='text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4 knowledge'
+								data-aos='zoom-y-out'>
+								Knowledge <br />
+								Innovation{" "}
+								<span className='bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400'>
+									Change
+								</span>
+							</h1>
+							<div className='max-w-3xl mx-auto'>
+								<p
+									className='text-xl text-primaryOn mb-8'
+									data-aos='zoom-y-out'
+									data-aos-delay='150'>
+									{/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo,beatae! */}
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
